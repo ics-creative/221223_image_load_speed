@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 0.08em;
+}
+
+ul,
+ol {
+  li {
+    list-style: none;
+  }
+}
+
+:root {
+  --text-color: #fff;
+  --border-color: #f3f3f3;
+  --border-dark-color: #999;
+  --key-color: #515455;
+  --bg-color: #282b2f;
+}
+
+html {
+  font-family: Roboto, "Noto Sans JP", sans-serif;
+  color: #fff;
+  background-color: #282b2f;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

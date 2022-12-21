@@ -1,0 +1,44 @@
+.missions {
+  display: flex;
+  flex-direction: column;
+  gap: 32px 0;
+
+  &__portrait {
+    position: relative;
+    width: 512px;
+    height: 512px;
+    margin: 0 auto;
+  }
+
+  &__portrait-bg {
+    position: absolute;
+  }
+
+  &__portrait-photo {
+    position: absolute;
+    filter: blur(25px);
+    opacity: 0;
+    transition: opacity 0.8s, filter 0.8s;
+
+    &.is-show {
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+
+  &__text {
+    display: grid;
+    place-items: center;
+  }
+
+  &__text-inner {
+    width: 600px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: center;
+    @media screen and (max-width: 768px) {
+      width: auto;
+      padding: 0 24px;
+    }
+  }
+}

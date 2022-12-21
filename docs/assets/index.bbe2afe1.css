@@ -1,0 +1,691 @@
+@charset "UTF-8";
+html {
+  color: #333;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Noto Sans JP;
+}
+a {
+  color: #333;
+}
+input {
+  font-size: 16px;
+}
+input::placeholder {
+  font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  .pcOnly {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .spOnly {
+    display: none;
+  }
+}
+.wrapper {
+  min-width: 360px;
+  max-width: 752px;
+  padding: 48px 16px 0;
+  margin: 0 auto;
+  counter-reset: section;
+}
+section {
+  margin-bottom: 64px;
+}
+h2 {
+  margin-bottom: 16px;
+}
+h2:before {
+  content: counter(section) ". ";
+  counter-increment: section;
+}
+.exampleWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.exampleWrapper__3column .example {
+  width: 220px;
+}
+.example {
+  width: 348px;
+}
+.example__long {
+  width: 100%;
+}
+.example h3 {
+  margin-bottom: 8px;
+  text-align: center;
+}
+.example.ng h3 {
+  color: #ff4500;
+}
+.example.good h3 {
+  color: #228b22;
+}
+.example .sample {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  padding: 16px;
+  background-color: #f9f9f9;
+}
+.example .note {
+  padding: 16px;
+}
+.divButton {
+  display: block;
+  text-align: center;
+  width: 148px;
+  height: 42px;
+  padding: 8px 48px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  background-color: #7859b7;
+  border: none;
+  border-radius: 50px;
+  box-shadow: none;
+  appearance: none;
+}
+.divButton:focus-visible {
+  outline-offset: 3px;
+}
+.buttonButton {
+  display: block;
+  text-align: center;
+  width: 148px;
+  height: 42px;
+  padding: 8px 48px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  background-color: #7859b7;
+  border: none;
+  border-radius: 50px;
+  box-shadow: none;
+  appearance: none;
+}
+.buttonButton:focus-visible {
+  outline-offset: 3px;
+}
+.homeButtonNg {
+  position: relative;
+  display: block;
+  width: 32px;
+  height: 38px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  appearance: none;
+}
+.homeButtonNg:hover .icon_hover {
+  opacity: 1;
+}
+.homeButtonNg .icon_default,
+.homeButtonNg .icon_hover {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  transition: opacity 0.2s;
+}
+.homeButtonNg .icon_hover {
+  opacity: 0;
+}
+.homeButtonNg .homeButton_text {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 32px;
+  font-size: 10px;
+  text-align: center;
+}
+.homeButtonGood {
+  position: relative;
+  display: block;
+  width: 32px;
+  height: 38px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  appearance: none;
+}
+.homeButtonGood:hover .icon_hover {
+  opacity: 1;
+}
+.homeButtonGood .icon_default,
+.homeButtonGood .icon_hover {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  transition: opacity 0.2s;
+}
+.homeButtonGood .icon_hover {
+  opacity: 0;
+}
+.homeButtonGood .homeButton_text {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 32px;
+  font-size: 10px;
+  text-align: center;
+}
+.homeButtonGood:before {
+  position: absolute;
+  top: -9px;
+  left: -9px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  content: "";
+}
+.externalLinkNG {
+  position: relative;
+  color: #000;
+}
+.externalLinkNG:after {
+  position: absolute;
+  top: 6px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  background-image: url(/221208_coding_details_interactive/assets/icon_tab.ff96ed70.svg);
+  background-repeat: no-repeat;
+  background-size: 12px;
+}
+.externalLinkNG:after {
+  right: -20px;
+}
+.externalLinkGood {
+  position: relative;
+  color: #000;
+  padding-right: 20px;
+}
+.externalLinkGood:after {
+  position: absolute;
+  top: 6px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  background-image: url(/221208_coding_details_interactive/assets/icon_tab.ff96ed70.svg);
+  background-repeat: no-repeat;
+  background-size: 12px;
+}
+.externalLinkGood:after {
+  right: 0;
+}
+.menuNg {
+  list-style: none;
+  background-color: #7859b7;
+}
+.menuNg li {
+  width: 240px;
+  border-bottom: 1px solid #f9f9f9;
+}
+.menuNg li a {
+  color: #fff;
+  text-decoration: none;
+}
+.menuNg li {
+  padding: 16px;
+}
+.menuGood {
+  list-style: none;
+  background-color: #7859b7;
+}
+.menuGood li {
+  width: 240px;
+  border-bottom: 1px solid #f9f9f9;
+}
+.menuGood li a {
+  color: #fff;
+  text-decoration: none;
+}
+.menuGood a {
+  display: block;
+  padding: 16px;
+}
+.basicCheck {
+  display: inline-block;
+  margin-right: 8px;
+}
+.policy_link {
+  display: inline-block;
+}
+.policy.good .policy_link {
+  margin-bottom: 16px;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+  border: 0;
+}
+.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  background-color: #e9e9e9;
+  border: none;
+  border-radius: 8px;
+  box-shadow: none;
+  appearance: none;
+  background-image: url(/221208_coding_details_interactive/assets/icon_search.0764c75f.svg);
+  background-size: 48px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.buttonCursorNg {
+  display: block;
+  padding: 8px 48px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #7859b7;
+  border: none;
+  border-radius: 50px;
+  box-shadow: none;
+  appearance: none;
+}
+.buttonCursorGood {
+  display: block;
+  text-align: center;
+  width: 148px;
+  height: 42px;
+  padding: 8px 48px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  background-color: #7859b7;
+  border: none;
+  border-radius: 50px;
+  box-shadow: none;
+  appearance: none;
+}
+.buttonCursorGood:focus-visible {
+  outline-offset: 3px;
+}
+.hoverLinkNg {
+  transition: color 0.2s;
+}
+.hoverLinkNg:hover {
+  color: #ff4500;
+}
+.hoverLinkGood {
+  transition: color 0.2s;
+}
+@media (any-hover: hover) {
+  .hoverLinkGood:hover {
+    color: #ff4500;
+  }
+}
+.buttonFocusNg {
+  display: block;
+  padding: 8px 48px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  background-color: #7859b7;
+  border: none;
+  border-radius: 50px;
+  box-shadow: none;
+  appearance: none;
+  outline: none;
+}
+.buttonFocusGood {
+  display: block;
+  text-align: center;
+  width: 148px;
+  height: 42px;
+  padding: 8px 48px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  background-color: #7859b7;
+  border: none;
+  border-radius: 50px;
+  box-shadow: none;
+  appearance: none;
+}
+.buttonFocusGood:focus-visible {
+  outline-offset: 3px;
+}
+.accordionLayout {
+  height: 104px;
+}
+.accordionWrapper {
+  width: 250px;
+}
+.accordionWrapper .outline {
+  height: 52px;
+  position: relative;
+  padding: 12px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+.accordionWrapper .outline:after {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: block;
+  content: "\25bc";
+  transition: transform 0.3s;
+}
+.accordionWrapper .content {
+  padding: 12px;
+  height: 52px;
+  background-color: #f0f0f0;
+}
+.divAccordion .content {
+  display: none;
+}
+.divAccordion.isActive .outline:after {
+  transform: rotate(180deg);
+}
+.divAccordion.isActive .content,
+.usefulAccordion .outline {
+  display: block;
+}
+.usefulAccordion[open] .outline:after {
+  transform: rotate(180deg);
+}
+.buttonHoverNg {
+  display: block;
+  text-align: center;
+  width: 148px;
+  height: 42px;
+  padding: 8px 48px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  background-color: #7859b7;
+  border: none;
+  border-radius: 50px;
+  box-shadow: none;
+  appearance: none;
+  transition: width 0.4s, height 0.4s, font-size 0.4s;
+}
+.buttonHoverNg:focus-visible {
+  outline-offset: 3px;
+}
+.buttonHoverNg:hover {
+  width: 178px;
+  height: 50px;
+  font-size: 19.2px;
+}
+.buttonHoverGood {
+  display: block;
+  text-align: center;
+  width: 148px;
+  height: 42px;
+  padding: 8px 48px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  background-color: #7859b7;
+  border: none;
+  border-radius: 50px;
+  box-shadow: none;
+  appearance: none;
+  transition: transform 0.4s;
+  will-change: transform;
+}
+.buttonHoverGood:focus-visible {
+  outline-offset: 3px;
+}
+.buttonHoverGood:hover {
+  transform: scale(1.2);
+}
+.arrowHoverNg {
+  position: relative;
+  display: block;
+  width: 148px;
+  height: 40px;
+  padding: 8px 16px 8px 24px;
+  margin-top: 24px;
+  color: #333;
+  text-decoration: none;
+  background-color: #e9e9e9;
+  border-radius: 24px;
+}
+.arrowHoverNg:after {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  content: "";
+  background-image: url(/221208_coding_details_interactive/assets/icon_arrow.d4967f18.svg);
+  background-size: 16px;
+}
+.arrowHoverNg:after {
+  transition: right 0.7s;
+}
+.arrowHoverNg:hover:after {
+  right: 8px;
+}
+.arrowHoverGood {
+  position: relative;
+  display: block;
+  width: 148px;
+  height: 40px;
+  padding: 8px 16px 8px 24px;
+  margin-top: 24px;
+  color: #333;
+  text-decoration: none;
+  background-color: #e9e9e9;
+  border-radius: 24px;
+}
+.arrowHoverGood:after {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  content: "";
+  background-image: url(/221208_coding_details_interactive/assets/icon_arrow.d4967f18.svg);
+  background-size: 16px;
+}
+.arrowHoverGood:after {
+  transition: transform 0.7s;
+}
+.arrowHoverGood:hover:after {
+  transform: translate(8px);
+}
+.buttonHoverBorderNg {
+  display: block;
+  text-align: center;
+  width: 148px;
+  height: 42px;
+  padding: 8px 48px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  background-color: #7859b7;
+  border: none;
+  border-radius: 50px;
+  box-shadow: none;
+  appearance: none;
+  transition: transform 0.2s;
+}
+.buttonHoverBorderNg:focus-visible {
+  outline-offset: 3px;
+}
+.buttonHoverBorderNg:hover {
+  transform: scale(0.5);
+}
+.buttonHoverBorderGood {
+  cursor: pointer;
+  background: none;
+  border: none;
+  appearance: none;
+}
+.buttonHoverBorderGood .buttonHoverBorderGood_inner {
+  display: block;
+  text-align: center;
+  width: 148px;
+  height: 42px;
+  padding: 8px 48px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  background-color: #7859b7;
+  border: none;
+  border-radius: 50px;
+  box-shadow: none;
+  appearance: none;
+  position: relative;
+  transition: transform 0.2s;
+}
+.buttonHoverBorderGood .buttonHoverBorderGood_inner:focus-visible {
+  outline-offset: 3px;
+}
+.buttonHoverBorderGood:hover .buttonHoverBorderGood_inner {
+  transform: scale(0.5);
+}
+.customCheckboxNg {
+  position: relative;
+  display: block;
+  height: 24px;
+  padding-left: 24px;
+}
+.customCheckboxNg:focus-within {
+  outline: 2px solid #5779ff;
+  outline-offset: 4px;
+}
+.customCheckboxNg .checkIcon {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  display: block;
+  width: 16px;
+  height: 16px;
+  content: "";
+  background-color: #e9e9e9;
+  border-radius: 4px;
+  transition: background-color 0.1s;
+}
+.customCheckboxNg .checkIcon:before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  content: "";
+  background-image: url(/221208_coding_details_interactive/assets/icon_check.5edd7977.svg);
+  background-size: 12px;
+  transition: transform 0.4s cubic-bezier(0.34, 3.5, 0.64, 1);
+  transform: scale(0);
+}
+.customCheckboxNg input:checked ~ .checkIcon {
+  background-color: #5779ff;
+}
+.customCheckboxNg input:checked ~ .checkIcon:before {
+  transform: scale(1);
+}
+.customCheckboxNg input {
+  display: none;
+}
+.customCheckboxGood {
+  position: relative;
+  display: block;
+  height: 24px;
+  padding-left: 24px;
+}
+.customCheckboxGood:focus-within {
+  outline: 2px solid #5779ff;
+  outline-offset: 4px;
+}
+.customCheckboxGood .checkIcon {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  display: block;
+  width: 16px;
+  height: 16px;
+  content: "";
+  background-color: #e9e9e9;
+  border-radius: 4px;
+  transition: background-color 0.1s;
+}
+.customCheckboxGood .checkIcon:before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  content: "";
+  background-image: url(/221208_coding_details_interactive/assets/icon_check.5edd7977.svg);
+  background-size: 12px;
+  transition: transform 0.4s cubic-bezier(0.34, 3.5, 0.64, 1);
+  transform: scale(0);
+}
+.customCheckboxGood input:checked ~ .checkIcon {
+  background-color: #5779ff;
+}
+.customCheckboxGood input:checked ~ .checkIcon:before {
+  transform: scale(1);
+}
+.autoCompleteForm {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  width: 280px;
+}
+.autoCompleteForm label {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+}
+.autoCompleteForm input {
+  width: 120px;
+  margin-left: auto;
+}
+.switchButton {
+  display: block;
+  padding: 8px 16px;
+  margin-top: 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  appearance: none;
+  border: 1px solid #333;
+  background-color: #e9e9e9;
+  transition: background-color 0.2s;
+}
+.switchButton:hover {
+  background-color: #d0d0d0;
+}
+.inputZoomNg input {
+  font-size: 14px;
+}
+.inputZoomGood input {
+  font-size: 16px;
+}
