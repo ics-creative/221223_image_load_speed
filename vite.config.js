@@ -22,7 +22,7 @@ export default defineConfig({
       },
     },
   },
-  base: "/221223_coding_details_speed/",
+  base: "/221223_image_load_speed/",
   server: {
     port: 3456,
   },
