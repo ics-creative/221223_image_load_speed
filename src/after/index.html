@@ -58,16 +58,12 @@
       <section class="main-visual">
         <picture class="main-visual__image">
           <source
-            media=" (min-width: 768px) and (min-resolution: 2dppx)"
-            srcset="/assets/images/mv_desktop_optimized_2x.jpg 2048w"
-          />
-          <source
             media=" (min-width: 768px)"
-            srcset="/assets/images/mv_desktop_optimized_1x.jpg 1024w"
+            srcset="/assets/images/mv_desktop_optimized_1x.jpg 1x,/assets/images/mv_desktop_optimized_2x.jpg 2x"
           />
           <source
             media=" (max-width: 768px)"
-            srcset="/assets/images/mv_mobile.jpg 512w"
+            srcset="/assets/images/mv_mobile.jpg"
           />
           <img
             src="/assets/images/mv_desktop.jpg"
@@ -212,9 +208,9 @@
           <li class="card-list__item card">
             <img
               class="card__image"
-              src="/assets/images/work01_optimized.jpg"
-              width="1024"
-              height="623"
+              srcset="/assets/images/work01_optimized_1x.jpg 1x,/assets/images/work01_optimized_2x.jpg 2x"
+              width="360"
+              height="240"
               alt="ねこ"
               loading="lazy"
             />
@@ -227,9 +223,9 @@
           <li class="card-list__item card">
             <img
               class="card__image"
-              src="/assets/images/work02_optimized.jpg"
-              width="1024"
-              height="623"
+              srcset="/assets/images/work02_optimized_1x.jpg 1x,/assets/images/work02_optimized_2x.jpg 2x"
+              width="360"
+              height="240"
               alt="ネコ"
               loading="lazy"
             />
@@ -243,9 +239,9 @@
           <li class="card-list__item card">
             <img
               class="card__image"
-              src="/assets/images/work03_optimized.jpg"
-              width="1024"
-              height="623"
+              srcset="/assets/images/work03_optimized_1x.jpg 1x,/assets/images/work03_optimized_2x.jpg 2x"
+              width="360"
+              height="240"
               alt="猫"
               loading="lazy"
             />
