@@ -3,19 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>画像の読み込み最適化後</title>
-    <link rel="stylesheet" href="/assets/style/style.scss" />
+    <title>ファースビューにもloading="lazy"をつけた場合</title>
+    
+    <script type="module" crossorigin src="/221223_image_load_speed/assets/main.js"></script>
+    <link rel="stylesheet" href="/221223_image_load_speed/assets/main.css">
   </head>
   <body class="global-layout">
     <header class="global-layout__header header">
       <h1>
         <img
-          src="/assets/images/logo.svg"
+          src="/221223_image_load_speed/assets/logo.svg"
           alt="MEW Corporation"
           class="header__logo"
           width="128"
           height="83"
-          fetchpriority="high"
+          loading="lazy"
         />
       </h1>
       <nav>
@@ -38,19 +40,19 @@
     <button class="global-layout__hamburger-button hamburger-button">
       <img
         class="hamburger-button__open"
-        src="/assets/images/open.png"
+        src="/221223_image_load_speed/assets/open.png"
         alt="OPEN"
         width="32"
         height="24"
-        fetchpriority="low"
+        loading="lazy"
       />
       <img
         class="hamburger-button__close"
-        src="/assets/images/close.svg"
+        src="/221223_image_load_speed/assets/close.svg"
         alt="CLOSE"
         width="32"
         height="28"
-        fetchpriority="low"
+        loading="lazy"
       />
       <span class="hamburger-button__label"> MENU </span>
     </button>
@@ -59,26 +61,27 @@
         <picture class="main-visual__image">
           <source
             media=" (min-width: 768px)"
-            srcset="/assets/images/mv_desktop_optimized_1x.jpg 1x,/assets/images/mv_desktop_optimized_2x.jpg 2x"
+            srcset="/221223_image_load_speed/assets/mv_desktop_optimized_1x.jpg 1x, /221223_image_load_speed/assets/mv_desktop_optimized_2x.jpg 2x"
           />
           <source
             media=" (max-width: 768px)"
-            srcset="/assets/images/mv_mobile_optimized.jpg"
+            srcset="/221223_image_load_speed/assets/mv_mobile_optimized.jpg "
           />
           <img
-            src="/assets/images/mv_desktop_optimized_1x.jpg"
+            src="/221223_image_load_speed/assets/mv_desktop_optimized_1x.jpg"
             alt="猫たち"
             width="1024"
             height="512"
-            fetchpriority="high"
+            loading="lazy"
           />
         </picture>
         <h2 class="main-visual__title">
           <img
-            src="/assets/images/logo.svg"
+            src="/221223_image_load_speed/assets/logo.svg"
             alt="MEW Corporation"
             width="256"
             height="166"
+            loading="lazy"
           />
         </h2>
       </section>
@@ -86,7 +89,7 @@
         <h2 class="section-title missions__title">OUR MISSIONS</h2>
         <div class="missions__portrait">
           <img
-            src="/assets/images/galaxy_optimized.jpg"
+            src="/221223_image_load_speed/assets/galaxy_optimized.jpg"
             class="missions__portrait-bg"
             alt=""
             width="512"
@@ -94,7 +97,7 @@
             loading="lazy"
           />
           <img
-            src="/assets/images/transparent_image_optimized.webp"
+            src="/221223_image_load_speed/assets/transparent_image_optimized.webp"
             class="missions__portrait-photo"
             alt="猫"
             width="512"
@@ -116,7 +119,7 @@
         <div class="alternating-layout">
           <div class="alternating-layout__item">
             <img
-              src="/assets/images/service01_optimized.jpg"
+              src="/221223_image_load_speed/assets/service01_optimized.jpg"
               alt="猫"
               width="1024"
               height="623"
@@ -134,7 +137,7 @@
           </div>
           <div class="alternating-layout__item">
             <img
-              src="/assets/images/service02_optimized.jpg"
+              src="/221223_image_load_speed/assets/service02_optimized.jpg"
               alt="猫"
               width="1024"
               height="623"
@@ -152,7 +155,7 @@
           </div>
           <div class="alternating-layout__item">
             <img
-              src="/assets/images/service03_optimized.jpg"
+              src="/221223_image_load_speed/assets/service03_optimized.jpg"
               alt="ネコ"
               width="1024"
               height="623"
@@ -209,7 +212,7 @@
           <li class="card-list__item card">
             <img
               class="card__image"
-              srcset="/assets/images/work01_optimized_1x.jpg 1x,/assets/images/work01_optimized_2x.jpg 2x"
+              srcset="/221223_image_load_speed/assets/work01_optimized_1x.jpg 1x, /221223_image_load_speed/assets/work01_optimized_2x.jpg 2x"
               width="360"
               height="240"
               alt="ねこ"
@@ -224,7 +227,7 @@
           <li class="card-list__item card">
             <img
               class="card__image"
-              srcset="/assets/images/work02_optimized_1x.jpg 1x,/assets/images/work02_optimized_2x.jpg 2x"
+              srcset="/221223_image_load_speed/assets/work02_optimized_1x.jpg 1x, /221223_image_load_speed/assets/work02_optimized_2x.jpg 2x"
               width="360"
               height="240"
               alt="ネコ"
@@ -240,7 +243,7 @@
           <li class="card-list__item card">
             <img
               class="card__image"
-              srcset="/assets/images/work03_optimized_1x.jpg 1x,/assets/images/work03_optimized_2x.jpg 2x"
+              srcset="/221223_image_load_speed/assets/work03_optimized_1x.jpg 1x, /221223_image_load_speed/assets/work03_optimized_2x.jpg 2x"
               width="360"
               height="240"
               alt="猫"
@@ -258,6 +261,6 @@
     <footer class="global-layout__footer footer">
       <small>Images are generated by Stable Diffusion</small>
     </footer>
-    <script type="module" src="/assets/js/main.js" fetchpriority="low"></script>
+    
   </body>
 </html>

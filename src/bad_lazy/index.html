@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>画像の読み込み最適化後</title>
+    <title>ファースビューにもloading="lazy"をつけた場合</title>
     <link rel="stylesheet" href="/assets/style/style.scss" />
   </head>
   <body class="global-layout">
@@ -15,7 +15,7 @@
           class="header__logo"
           width="128"
           height="83"
-          fetchpriority="high"
+          loading="lazy"
         />
       </h1>
       <nav>
@@ -42,7 +42,7 @@
         alt="OPEN"
         width="32"
         height="24"
-        fetchpriority="low"
+        loading="lazy"
       />
       <img
         class="hamburger-button__close"
@@ -50,7 +50,7 @@
         alt="CLOSE"
         width="32"
         height="28"
-        fetchpriority="low"
+        loading="lazy"
       />
       <span class="hamburger-button__label"> MENU </span>
     </button>
@@ -70,7 +70,7 @@
             alt="猫たち"
             width="1024"
             height="512"
-            fetchpriority="high"
+            loading="lazy"
           />
         </picture>
         <h2 class="main-visual__title">
@@ -79,6 +79,7 @@
             alt="MEW Corporation"
             width="256"
             height="166"
+            loading="lazy"
           />
         </h2>
       </section>
