@@ -10,7 +10,6 @@ export default defineConfig({
         main: "src/index.html",
         before: "src/before/index.html",
         after: "src/after/index.html",
-        bad_lazy: "src/bad_lazy/index.html",
       },
       output: {
         chunkFileNames: "assets/[name].js",
