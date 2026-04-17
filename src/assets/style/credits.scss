@@ -11,7 +11,8 @@
 
   &__list {
     width: 800px;
-    @media screen and (max-width: 768px) {
+
+    @media screen and (width <= 768px) {
       width: auto;
       padding: 0 24px;
     }

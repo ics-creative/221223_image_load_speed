@@ -1,14 +1,14 @@
 .hamburger-button {
-  @media screen and (min-width: 769px) {
+  @media screen and (width >= 769px) {
     display: none;
   }
 
   width: 48px;
   height: 48px;
   color: var(--text-color);
+  appearance: none;
   background-color: transparent;
   border: none;
-  appearance: none;
 
   &__open,
   &__close {
