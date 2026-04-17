@@ -4,7 +4,7 @@
   gap: 32px;
   align-items: center;
 
-  &__list {
+  .news__list {
     width: 640px;
 
     @media (width <= 768px) {

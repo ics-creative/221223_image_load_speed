@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 32px 0;
 
-  &__portrait {
+  .missions__portrait {
     position: relative;
     width: 512px;
     aspect-ratio: 1/1;
@@ -19,20 +19,20 @@
     }
   }
 
-  &__portrait-bg {
+  .missions__portrait-bg {
     position: absolute;
   }
 
-  &__portrait-photo {
+  .missions__portrait-photo {
     position: absolute;
   }
 
-  &__text {
+  .missions__text {
     display: grid;
     place-items: center;
   }
 
-  &__text-inner {
+  .missions__text-inner {
     width: 600px;
     font-size: 1.2rem;
     line-height: 1.8;

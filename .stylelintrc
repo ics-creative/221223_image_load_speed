@@ -6,6 +6,12 @@
   "customSyntax": "postcss-scss",
   "rules": {
     "selector-class-pattern": null,
+    "selector-nested-pattern": [
+      "^(?!.*&(?:__|--)).*$",
+      {
+        "splitList": true
+      }
+    ],
     "selector-id-pattern": null,
     "scss/at-mixin-pattern": null,
     "scss/at-function-pattern": null,

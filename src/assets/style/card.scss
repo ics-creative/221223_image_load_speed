@@ -3,17 +3,17 @@
   flex-direction: column;
   row-gap: 8px;
 
-  &__image {
+  .card__image {
     display: block;
     width: 100%;
     height: auto;
   }
 
-  &__title {
+  .card__title {
     font-size: 1.3rem;
   }
 
-  &__text {
+  .card__text {
     font-size: 0.9rem;
   }
 }

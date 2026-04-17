@@ -4,7 +4,7 @@
   gap: 32px;
   align-items: center;
 
-  &__table {
+  .company__table {
     width: 640px;
 
     @media (width <= 768px) {

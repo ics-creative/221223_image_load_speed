@@ -5,7 +5,7 @@
     gap: 64px;
   }
 
-  &__item {
+  .alternating-layout__item {
     display: flex;
 
     @media (width > 768px) {
@@ -20,8 +20,8 @@
     }
   }
 
-  &__image,
-  &__description {
+  .alternating-layout__image,
+  .alternating-layout__description {
     flex-shrink: 0;
     width: 50%;
 
@@ -31,12 +31,12 @@
     }
   }
 
-  &__image {
+  .alternating-layout__image {
     display: block;
     object-fit: cover;
   }
 
-  &__description {
+  .alternating-layout__description {
     display: grid;
     place-items: center;
     background-image: url("/src/assets/images/paw.png");
@@ -49,7 +49,7 @@
     }
   }
 
-  &__text {
+  .alternating-layout__text {
     max-width: 600px;
     padding: 0 24px;
     font-size: 1.2rem;

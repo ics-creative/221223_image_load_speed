@@ -3,7 +3,7 @@
   grid-template: "header" auto "contents" 1fr "footer" auto / 100%;
   min-height: 100vh;
 
-  &__header {
+  .global-layout__header {
     position: fixed;
     top: 0;
     left: 0;
@@ -24,18 +24,18 @@
     }
   }
 
-  &__hamburger-button {
+  .global-layout__hamburger-button {
     position: fixed;
     top: 8px;
     right: 16px;
     z-index: 3;
   }
 
-  &__contents {
+  .global-layout__contents {
     grid-area: contents;
   }
 
-  &__footer {
+  .global-layout__footer {
     grid-area: footer;
   }
 }

@@ -10,19 +10,19 @@
   background-color: transparent;
   border: none;
 
-  &__open,
-  &__close {
+  .hamburger-button__open,
+  .hamburger-button__close {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
-  &__open {
+  .hamburger-button__open {
     opacity: 1;
   }
 
-  &__close {
+  .hamburger-button__close {
     opacity: 0;
   }
 
@@ -36,7 +36,7 @@
     }
   }
 
-  &__label {
+  .hamburger-button__label {
     position: absolute;
     bottom: -10px;
     left: 0;

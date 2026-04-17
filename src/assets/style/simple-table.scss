@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 160px auto;
 
-  &__head {
+  .simple-table__head {
     padding: 16px 8px;
     font-weight: bold;
     line-height: 2;
@@ -13,7 +13,7 @@
     }
   }
 
-  &__description {
+  .simple-table__description {
     padding: 16px 0;
     line-height: 2;
     border-bottom: 1px solid var(--border-color);
