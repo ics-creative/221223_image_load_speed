@@ -1,4 +1,4 @@
-import { resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 
 import { defineConfig } from "vite";
 
@@ -9,9 +9,9 @@ export default defineConfig({
     assetsInlineLimit: 0,
     rolldownOptions: {
       input: {
-        main: resolve(__dirname, "index.html"),
-        before: resolve(__dirname, "before/index.html"),
-        after: resolve(__dirname, "after/index.html"),
+        main: fileURLToPath(new URL("./index.html", import.meta.url)),
+        before: fileURLToPath(new URL("./before/index.html", import.meta.url)),
+        after: fileURLToPath(new URL("./after/index.html", import.meta.url)),
       },
     },
   },

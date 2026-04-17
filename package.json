@@ -7,8 +7,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "oxfmt": "oxfmt .",
-    "stylelint": "stylelint --fix src/assets/style/**/*.css",
-    "format": "oxfmt . && stylelint --fix src/assets/style/**/*.css"
+    "stylelint": "stylelint --fix \"src/**/*.css\"",
+    "format": "oxfmt . && stylelint --fix \"src/**/*.css\""
   },
   "devDependencies": {
     "oxfmt": "0.45.0",
