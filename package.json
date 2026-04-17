@@ -6,12 +6,12 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "prettier": "prettier \"**/*.{css,ts,js,html}\" --write",
+    "oxfmt": "oxfmt .",
     "stylelint": "stylelint --fix src/assets/style/**/*.css",
-    "format": "prettier \"**/*.{css,ts,js,html}\" --write && stylelint --fix src/assets/style/**/*.css"
+    "format": "oxfmt . && stylelint --fix src/assets/style/**/*.css"
   },
   "devDependencies": {
-    "prettier": "3.8.3",
+    "oxfmt": "0.45.0",
     "stylelint": "17.8.0",
     "stylelint-config-recess-order": "7.7.0",
     "stylelint-config-standard": "40.0.0",
