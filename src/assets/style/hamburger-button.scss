@@ -1,5 +1,5 @@
 .hamburger-button {
-  @media screen and (width >= 769px) {
+  @media (width > 768px) {
     display: none;
   }
 

@@ -9,7 +9,7 @@
     aspect-ratio: 1/1;
     margin: 0 auto;
 
-    @media screen and (width <= 768px) {
+    @media (width <= 768px) {
       width: 100%;
     }
 
@@ -25,16 +25,6 @@
 
   &__portrait-photo {
     position: absolute;
-    opacity: 0;
-    filter: blur(25px);
-    transition:
-      opacity 0.8s,
-      filter 0.8s;
-
-    &.is-show {
-      opacity: 1;
-      filter: blur(0);
-    }
   }
 
   &__text {
@@ -48,7 +38,7 @@
     line-height: 1.8;
     text-align: center;
 
-    @media screen and (width <= 768px) {
+    @media (width <= 768px) {
       width: auto;
       padding: 0 24px;
     }

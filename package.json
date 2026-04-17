@@ -1,9 +1,7 @@
 {
   "name": "221208_coding_details_interactive",
   "version": "1.0.0",
-  "packageManager": "npm@11.12.1",
-  "author": "ics-nishihara <nishihara@ics-web.jp>",
-  "license": "MIT",
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -20,8 +18,5 @@
     "stylelint-config-standard-scss": "17.0.0",
     "stylelint-order": "8.1.1",
     "vite": "8.0.8"
-  },
-  "dependencies": {
-    "simple-scroll-trigger": "3.0.1"
   }
 }
