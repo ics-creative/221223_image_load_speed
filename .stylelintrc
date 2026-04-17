@@ -1,9 +1,8 @@
 {
   "extends": [
-    "stylelint-config-standard-scss",
+    "stylelint-config-standard",
     "stylelint-config-recess-order"
   ],
-  "customSyntax": "postcss-scss",
   "rules": {
     "selector-class-pattern": null,
     "selector-nested-pattern": [
@@ -13,9 +12,6 @@
       }
     ],
     "selector-id-pattern": null,
-    "scss/at-mixin-pattern": null,
-    "scss/at-function-pattern": null,
-    "scss/dollar-variable-pattern": null,
     "custom-property-pattern": null,
     "color-function-notation": "legacy",
     "media-feature-name-no-vendor-prefix": null,
@@ -24,20 +20,6 @@
     "property-no-vendor-prefix": null,
     "function-name-case": null,
     "font-family-no-missing-generic-family-keyword": null,
-    "media-feature-name-no-unknown": null,
-    "at-rule-no-unknown": [
-      true,
-      {
-        "ignoreAtRules": [
-          "include",
-          "mixin",
-          "use",
-          "forward",
-          "function",
-          "return",
-          "for"
-        ]
-      }
-    ]
+    "media-feature-name-no-unknown": null
   }
 }
