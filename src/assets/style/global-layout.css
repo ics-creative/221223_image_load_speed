@@ -11,16 +11,7 @@
     width: 100%;
 
     @media (width <= 768px) {
-      flex-direction: column;
-      align-items: flex-start;
-      height: 100%;
-      background-color: #fff;
-      transform: translate(-100%);
-      transition: transform 0.4s;
-
-      &.is-active {
-        transform: translate(0%);
-      }
+      display: none;
     }
   }
 

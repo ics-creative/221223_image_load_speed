@@ -23,17 +23,7 @@
   }
 
   .hamburger-button__close {
-    opacity: 0;
-  }
-
-  &.is-active {
-    .hamburger-button__open {
-      opacity: 0;
-    }
-
-    .hamburger-button__close {
-      opacity: 1;
-    }
+    display: none;
   }
 
   .hamburger-button__label {
